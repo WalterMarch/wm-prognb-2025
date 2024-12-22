@@ -22,6 +22,9 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && usermod -s $USER_SHELL $USERNAME
 
+# C# (csharp/dotnet)
+RUN apt-get install -y dotnet-sdk-8.0
+
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
