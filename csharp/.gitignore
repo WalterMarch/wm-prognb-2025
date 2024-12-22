@@ -1,0 +1,11 @@
+# C#
+*/[Oo]bj
+*/[Bb]in
+*/*.user
+*/*.suo
+*/*.[Cc]ache
+*/*.bak
+*/*.ncb
+*/*.log 
+*/Ankh.NoLoad
+*.sln
