@@ -25,6 +25,9 @@ RUN groupadd --gid $USER_GID $USERNAME \
 # C# (csharp/dotnet)
 RUN apt-get install -y dotnet-sdk-8.0
 
+# Java 21
+RUN apt-get install -y openjdk-21-jdk
+
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
