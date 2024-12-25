@@ -1,5 +1,5 @@
 {
-	"name": "wm-senb-java-2025",
+	"name": "wm-prognb-java-2025",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},

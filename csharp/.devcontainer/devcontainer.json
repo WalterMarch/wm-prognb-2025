@@ -1,5 +1,5 @@
 {
-	"name": "wm-senb-csharp-2025",
+	"name": "wm-prognb-csharp-2025",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
