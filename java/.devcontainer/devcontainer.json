@@ -1,5 +1,5 @@
 {
-	"name": "wm-prognb-2025",
+	"name": "wm-prognb-java-2025",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -16,7 +16,6 @@
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
 				"streetsidesoftware.code-spell-checker",
-				"ms-dotnettools.csdevkit",
 				"vscjava.vscode-java-pack"
 			]
 		}
