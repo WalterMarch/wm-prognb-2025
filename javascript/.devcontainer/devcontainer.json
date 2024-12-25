@@ -1,0 +1,23 @@
+{
+	"name": "wm-prognb-javascript-2025",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	// https://stackoverflow.com/a/67803226/21655737
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/myuser/.ssh,type=bind"
+	],
+	"customizations": {
+		"vscode": {
+			"settings" : {"editor.rulers": [72, 79],
+			"editor.trimAutoWhitespace": true
+		},
+			"extensions": [
+				"DavidAnson.vscode-markdownlint",
+				"ms-azuretools.vscode-docker",
+				"streetsidesoftware.code-spell-checker",
+				"msjsdiag.vscode-react-native"
+			]
+		}
+	}
+}
