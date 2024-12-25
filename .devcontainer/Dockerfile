@@ -11,7 +11,9 @@ RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y git
 RUN apt-get install -y tree
+RUN apt-get install -y unzip
 RUN apt-get install -y wget
+RUN apt-get install -y zip
 
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
@@ -37,9 +39,17 @@ COPY confignvm.sh .
 RUN source ./confignvm.sh
 USER root
 
+# SDKMAN! for Kotlin
+RUN wget -O sdk.install.sh "https://get.sdkman.io"
+RUN chmod +x sdk.install.sh
+
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
+
+# Kotlin as user
+RUN /sdk.install.sh
+RUN source ~/.sdkman/bin/sdkman-init.sh && sdk install kotlin
 
 # configure git
 COPY configit.sh .
