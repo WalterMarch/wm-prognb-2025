@@ -24,6 +24,20 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && usermod -s $USER_SHELL $USERNAME
 
+ARG ZONE_INFO=America/New_York
+ENV LANG=en_US.UTF-8
+    
+# timezone info
+RUN ln -fs /usr/share/zoneinfo/$ZONE_INFO /etc/localtime
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
+RUN dpkg-reconfigure --frontend noninteractive tzdata
+
+# locale info
+RUN apt-get install -y locales && \
+    sed -i -e "s/# $LANG.*/$LANG UTF-8/" /etc/locale.gen && \
+    dpkg-reconfigure --frontend=noninteractive locales && \
+    update-locale LANG=$LANG
+
 # C# (csharp/dotnet)
 RUN apt-get install -y dotnet-sdk-8.0
 
@@ -42,6 +56,9 @@ USER root
 # SDKMAN! for Kotlin
 RUN wget -O sdk.install.sh "https://get.sdkman.io"
 RUN chmod +x sdk.install.sh
+
+# Pascal 
+RUN apt-get install -y fpc
 
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
