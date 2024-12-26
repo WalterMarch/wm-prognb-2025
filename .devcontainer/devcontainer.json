@@ -19,7 +19,9 @@
 				"ms-dotnettools.csdevkit",
 				"vscjava.vscode-java-pack",
 				"dbaeumer.vscode-eslint",
-				"mathiasfrohlich.Kotlin"
+				"mathiasfrohlich.Kotlin",
+				"coolchyni.fpctoolkit",
+				"coolchyni.beyond-debug"
 			]
 		}
 	}
