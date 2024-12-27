@@ -23,7 +23,6 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && usermod -s $USER_SHELL $USERNAME
 
 # Python
-RUN apt-get install -y python3
 RUN ln -fs /usr/bin/python3 /usr/bin/python
 RUN apt-get install -y python3-pip
 RUN pip install black
