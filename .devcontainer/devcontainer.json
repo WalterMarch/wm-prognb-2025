@@ -29,7 +29,8 @@
 				"richterger.perl",
 				"ms-python.black-formatter",
 				"ms-python.python",
-				"Shopify.ruby-extensions-pack"
+				"Shopify.ruby-extensions-pack",
+				"scala-lang.scala"
 			]
 		}
 	}

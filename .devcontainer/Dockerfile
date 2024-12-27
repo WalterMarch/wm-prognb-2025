@@ -53,7 +53,7 @@ COPY confignvm.sh .
 RUN source ./confignvm.sh
 USER root
 
-# SDKMAN! for Kotlin
+# SDKMAN! for Kotlin and Scala
 RUN wget -O sdk.install.sh "https://get.sdkman.io"
 RUN chmod +x sdk.install.sh
 
@@ -75,9 +75,9 @@ RUN  apt-get install -y ruby-full
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
 
-# Kotlin as user
+# Kotlin and Scala as user
 RUN /sdk.install.sh
-RUN source ~/.sdkman/bin/sdkman-init.sh && sdk install kotlin
+RUN source ~/.sdkman/bin/sdkman-init.sh && sdk install kotlin && sdk install scala
 
 # configure git
 COPY configit.sh .
