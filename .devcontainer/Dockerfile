@@ -63,6 +63,11 @@ RUN apt-get install -y fpc
 # Perl
 RUN apt-get install -y perl
 
+# Python
+RUN ln -fs /usr/bin/python3 /usr/bin/python
+RUN apt-get install -y python3-pip
+RUN pip install black
+
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
