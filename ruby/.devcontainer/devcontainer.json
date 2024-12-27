@@ -1,5 +1,5 @@
 {
-	"name": "wm-prognb-2025",
+	"name": "wm-prognb-ruby-2025",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -10,25 +10,12 @@
 	"customizations": {
 		"vscode": {
 			"settings" : {"editor.rulers": [72, 79],
-			"editor.trimAutoWhitespace": true,
-			"[python]": {
-				"editor.defaultFormatter": "ms-python.black-formatter",
-				"editor.formatOnSave": true
-			}
+			"editor.trimAutoWhitespace": true
 		},
 			"extensions": [
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
 				"streetsidesoftware.code-spell-checker",
-				"ms-dotnettools.csdevkit",
-				"vscjava.vscode-java-pack",
-				"dbaeumer.vscode-eslint",
-				"mathiasfrohlich.Kotlin",
-				"coolchyni.fpctoolkit",
-				"coolchyni.beyond-debug",
-				"richterger.perl",
-				"ms-python.black-formatter",
-				"ms-python.python",
 				"Shopify.ruby-extensions-pack"
 			]
 		}
