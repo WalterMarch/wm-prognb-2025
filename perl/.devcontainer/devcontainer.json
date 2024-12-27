@@ -1,5 +1,5 @@
 {
-	"name": "wm-prognb-2025",
+	"name": "wm-prognb-perl-2025",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -16,12 +16,6 @@
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
 				"streetsidesoftware.code-spell-checker",
-				"ms-dotnettools.csdevkit",
-				"vscjava.vscode-java-pack",
-				"dbaeumer.vscode-eslint",
-				"mathiasfrohlich.Kotlin",
-				"coolchyni.fpctoolkit",
-				"coolchyni.beyond-debug",
 				"richterger.perl"
 			]
 		}
