@@ -22,8 +22,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && usermod -s $USER_SHELL $USERNAME
 
-# JavaScript (Node.js via nvm; React)
-EXPOSE 3000
+# JavaScript (Node.js via nvm)
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
 RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
