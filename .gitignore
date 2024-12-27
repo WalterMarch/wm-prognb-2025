@@ -1,0 +1,4 @@
+configit.sh
+scratch/
+*.sln
+.DS_Store
