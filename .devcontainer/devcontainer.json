@@ -28,7 +28,8 @@
 				"coolchyni.beyond-debug",
 				"richterger.perl",
 				"ms-python.black-formatter",
-				"ms-python.python"
+				"ms-python.python",
+				"Shopify.ruby-extensions-pack"
 			]
 		}
 	}

@@ -68,6 +68,9 @@ RUN ln -fs /usr/bin/python3 /usr/bin/python
 RUN apt-get install -y python3-pip
 RUN pip install black
 
+# Ruby
+RUN  apt-get install -y ruby-full
+
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
