@@ -30,7 +30,8 @@
 				"ms-python.black-formatter",
 				"ms-python.python",
 				"Shopify.ruby-extensions-pack",
-				"scala-lang.scala"
+				"scala-lang.scala",
+				"VisualStudioExptTeam.vscodeintellicode-completions"
 			]
 		}
 	}
