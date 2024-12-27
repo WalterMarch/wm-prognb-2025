@@ -1,5 +1,5 @@
 {
-	"name": "wm-prognb-2025",
+	"name": "wm-prognb-python-2025",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -16,20 +16,13 @@
 				"editor.formatOnSave": true
 			}
 		},
-			"extensions": [
-				"DavidAnson.vscode-markdownlint",
-				"ms-azuretools.vscode-docker",
-				"streetsidesoftware.code-spell-checker",
-				"ms-dotnettools.csdevkit",
-				"vscjava.vscode-java-pack",
-				"dbaeumer.vscode-eslint",
-				"mathiasfrohlich.Kotlin",
-				"coolchyni.fpctoolkit",
-				"coolchyni.beyond-debug",
-				"richterger.perl",
-				"ms-python.black-formatter",
-				"ms-python.python"
-			]
+		"extensions": [
+			"DavidAnson.vscode-markdownlint",
+			"ms-azuretools.vscode-docker",
+			"streetsidesoftware.code-spell-checker",
+			"ms-python.black-formatter",
+			"ms-python.python"
+		]
 		}
 	}
 }
