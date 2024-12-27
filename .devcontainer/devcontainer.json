@@ -21,7 +21,8 @@
 				"dbaeumer.vscode-eslint",
 				"mathiasfrohlich.Kotlin",
 				"coolchyni.fpctoolkit",
-				"coolchyni.beyond-debug"
+				"coolchyni.beyond-debug",
+				"richterger.perl"
 			]
 		}
 	}
