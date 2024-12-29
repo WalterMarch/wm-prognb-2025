@@ -20,6 +20,7 @@
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
 				"streetsidesoftware.code-spell-checker",
+				"eamodio.gitlens",
 				"ms-dotnettools.csdevkit",
 				"vscjava.vscode-java-pack",
 				"dbaeumer.vscode-eslint",
