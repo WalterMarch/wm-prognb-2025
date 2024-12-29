@@ -1,0 +1,25 @@
+{
+	"name": "wm-prognb-mysql-2025",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "db",
+    "workspaceFolder": "/workspaces/wm-prognb-2025/mysql",
+	// https://stackoverflow.com/a/67803226/21655737
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/myuser/.ssh,type=bind",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/git/wm-prognb-2025/mysql,target=/workspaces/wm-prognb-2025/mysql,type=bind"
+	],
+	"customizations": {
+		"vscode": {
+			"settings" : {"editor.rulers": [72, 79],
+			"editor.trimAutoWhitespace": true
+		},
+			"extensions": [
+				"DavidAnson.vscode-markdownlint",
+				"ms-azuretools.vscode-docker",
+				"streetsidesoftware.code-spell-checker",
+				"mtxr.sqltools",
+				"mtxr.sqltools-driver-mysql"
+			]
+		}
+	}
+}
