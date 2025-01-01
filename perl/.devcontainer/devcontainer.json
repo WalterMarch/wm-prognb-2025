@@ -16,7 +16,7 @@
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
 				"streetsidesoftware.code-spell-checker",
-				"richterger.perl"
+				bscan.perlnavigator
 			]
 		}
 	}
