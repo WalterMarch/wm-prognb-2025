@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM python:3.13-slim-bookworm
 
 ARG USERNAME=myuser
 ARG USER_UID=1000
@@ -22,11 +22,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && usermod -s $USER_SHELL $USERNAME
 
-# Python
-RUN ln -fs /usr/bin/python3 /usr/bin/python
-RUN apt-get install -y python3-pip
-RUN pip install black
-
 # switch to user $USERNAME
 SHELL ["/bin/bash", "-c"]
 USER $USERNAME
+
+RUN pip install black
